@@ -1,6 +1,3 @@
-# _VBA_
-VBA Stock Data ws
-
 Sub StockMarket_Analysis()
 
 '*******Variable*********
@@ -11,7 +8,7 @@ Sub StockMarket_Analysis()
     
     Dim year_close As Double
     
-    Dim Yearly_Change As Double
+    Dim Quarterly_Change As Double
     
     Dim Total_Stock_Volume As Double
     
@@ -62,15 +59,15 @@ For Each ws In Worksheets
                 Percent_Change = year_close
 
             Else
-                Yearly_Change = year_close - year_open
+                Quarterly_Change = year_close - year_open
 
-                Percent_Change = Yearly_Change / year_open
+                Percent_Change = Quarterly_Change / year_open
 
             End If
 '**************************************************
 
             ws.Cells(start_data, 9).Value = Ticker
-            ws.Cells(start_data, 10).Value = Yearly_Change
+            ws.Cells(start_data, 10).Value = Quarterly_Change
             ws.Cells(start_data, 11).Value = Percent_Change
 
             ws.Cells(start_data, 11).NumberFormat = "0.00%"
@@ -79,7 +76,7 @@ For Each ws In Worksheets
             start_data = start_data + 1
 
             Total_Stock_Volume = 0
-            Yearly_Change = 0
+            Quarterly_Change = 0
             Percent_Change = 0
 
             previous_i = i
@@ -122,7 +119,7 @@ For Each ws In Worksheets
 
                 increase_name = ws.Cells(k, 9).Value
 
-            ElseIf previous_k > Increase And prevous_k > current_k Then
+            ElseIf previous_k > Increase And previous_k > current_k Then
 
                 Increase = previous_k
 

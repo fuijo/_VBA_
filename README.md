@@ -41,11 +41,13 @@ Repository includes:
 VBA script files for each analysis.
 Screenshots of the results showcasing functionality and formatting.
 A comprehensive README file documenting the project and instructions.
+
 **Project Achievements**
 Automated Analysis: The script eliminates manual calculations and formatting, streamlining the analysis of stock data for multiple quarters.
 Clear Visualization: Conditional formatting enhances data readability and highlights critical insights.
 Scalability: The solution handles datasets of varying sizes and structures, demonstrating adaptability and reliability.
 Professional Documentation: Code and results are well-documented and uploaded to GitHub for review and collaboration.
+
 **Conclusion**
 The VBA Stock Market Analysis project successfully achieves the goal of automating the processing and analysis of stock data. By integrating dynamic calculations, conditional formatting, and multi-sheet functionality, the script provides a robust tool for financial data analysis. This project highlights the power of VBA in Excel for repetitive tasks and data-driven decision-making.
 
